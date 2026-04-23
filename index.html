@@ -61,22 +61,22 @@
         <span class="tc-dot tc-red"></span>
         <span class="tc-dot tc-yellow"></span>
         <span class="tc-dot tc-green"></span>
-        <span class="terminal-title">odoo-shell &mdash; bounced_payment_return</span>
+        <span class="terminal-title">laudon-labs &mdash; principles</span>
       </div>
-      <pre class="terminal-body"><span class="t-prompt">$</span> <span class="t-cmd">odoo -c odoo.conf -i bounced_payment_return -d prod</span>
-<span class="t-out">... loading bounced_payment_return (1 modules)</span>
-<span class="t-out">... 5 modules loaded in 0.21s, 170 queries (+170 extra)</span>
-<span class="t-out">... Module bounced_payment_return: upgrade</span>
-<span class="t-ok">&#10003; Registry loaded in 1.842s, 72 modules ready</span>
-<span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">payment.action_return_payment()</span>
-<span class="t-out">{</span>
-<span class="t-out">    "reversal_move_id": 8423,          <span class="t-comment"># reopens the invoice</span></span>
-<span class="t-out">    "fee_invoice_id":   1092,          <span class="t-comment"># optional, bills the customer</span></span>
-<span class="t-out">    "is_returned":      True,</span>
-<span class="t-out">    "return_reason":    "bounced",</span>
-<span class="t-out">    "chatter":          ["payment", "invoice", "partner", "fee_invoice"]</span>
-<span class="t-out">}</span>
-<span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-comment"># one wizard, one click, bookkeeping done right</span></pre>
+      <pre class="terminal-body"><span class="t-prompt">$</span> <span class="t-cmd">cat laudon-labs/principles.yaml</span>
+<span class="t-out">philosophy:</span>
+<span class="t-out">  - <span class="t-ok">clean_inherits_only</span>      <span class="t-comment"># no core overrides, upgrade-safe</span></span>
+<span class="t-out">  - <span class="t-ok">operator_first</span>            <span class="t-comment"># solves a real, recurring problem</span></span>
+<span class="t-out">  - <span class="t-ok">audit_trail_by_default</span>    <span class="t-comment"># chatter on every state change</span></span>
+<span class="t-out">  - <span class="t-ok">narrow_scope_deep_quality</span> <span class="t-comment"># small surface, well-tested</span></span>
+<span class="t-out">license: OPL-1</span>
+<span class="t-out">support: tom@laudonlabs.com</span>
+<span class="t-prompt">$</span> <span class="t-cmd">ls modules/</span>
+<span class="t-out">bounced_payment_return/   <span class="t-comment"># live on app store</span></span>
+<span class="t-out">cost_guardrail/           <span class="t-comment"># coming soon</span></span>
+<span class="t-out">stock_reorder_enh/        <span class="t-comment"># in development</span></span>
+<span class="t-out">stock_pick_cart/          <span class="t-comment"># in development</span></span>
+<span class="t-prompt">$</span> <span class="t-comment"># twelve years operating. modules that generalize ship here.</span></pre>
     </div>
   </div>
 </header>
@@ -121,6 +121,24 @@
           <div class="module-actions">
             <a href="https://apps.odoo.com/apps/modules/18.0/bounced_payment_return" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
             <a href="mailto:tom@laudonlabs.com?subject=bounced_payment_return" class="btn btn-ghost">Questions?</a>
+          </div>
+
+          <div class="terminal terminal-sm">
+            <div class="terminal-chrome">
+              <span class="tc-dot tc-red"></span>
+              <span class="tc-dot tc-yellow"></span>
+              <span class="tc-dot tc-green"></span>
+              <span class="terminal-title">odoo-shell &mdash; bounced_payment_return</span>
+            </div>
+            <pre class="terminal-body"><span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">payment.action_return_payment()</span>
+<span class="t-out">{</span>
+<span class="t-out">    "reversal_move_id": 8423,       <span class="t-comment"># reopens the invoice</span></span>
+<span class="t-out">    "fee_invoice_id":   1092,       <span class="t-comment"># optional, bills the customer</span></span>
+<span class="t-out">    "is_returned":      True,</span>
+<span class="t-out">    "return_reason":    "bounced",</span>
+<span class="t-out">    "chatter":          ["payment", "invoice", "partner", "fee_invoice"]</span>
+<span class="t-out">}</span>
+<span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-comment"># one wizard, one click, bookkeeping done right</span></pre>
           </div>
         </div>
         <aside class="module-spec">
