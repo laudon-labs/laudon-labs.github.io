@@ -79,7 +79,9 @@
 <span class="t-out">hr_self_onboarding/           <span class="t-comment"># live on app store</span></span>
 <span class="t-out">log_quiet/                    <span class="t-comment"># live on app store</span></span>
 <span class="t-out">barcode_parser_guard/         <span class="t-comment"># live on app store — free</span></span>
-<span class="t-out">cost_guardrail/               <span class="t-comment"># coming soon</span></span>
+<span class="t-out">cost_guardrail/               <span class="t-comment"># live on app store</span></span>
+<span class="t-out">stock_expiring_lots/          <span class="t-comment"># live on app store</span></span>
+<span class="t-out">bank_rec_match_filter/        <span class="t-comment"># live on app store</span></span>
 <span class="t-prompt">$</span> <span class="t-comment"># twelve years operating. modules that generalize ship here.</span></pre>
     </div>
   </div>
@@ -340,8 +342,8 @@
           <p class="module-tag">Twelve noisy messages, silenced. Everything else untouched.</p>
         </div>
         <div class="module-price">
-          <span class="price">$49</span>
-          <span class="price-note">one-time &middot; per database</span>
+          <span class="price">Free</span>
+          <span class="price-note">a narrow fix for a narrow annoyance</span>
         </div>
       </header>
 
@@ -371,7 +373,7 @@
             <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
             <dt>depends</dt><dd><code>base</code></dd>
             <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>license</dt><dd><code>LGPL-3</code></dd>
             <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
           </dl>
         </aside>
@@ -420,14 +422,135 @@
       </div>
     </article>
 
-    <article class="module module--coming">
+    <article class="module">
       <header class="module-head">
         <div class="module-title">
-          <span class="coming-label">coming soon</span>
           <h3>cost_guardrail</h3>
-          <p class="module-tag">PO receipt cost validation, per-category thresholds, COGS cleanup wizard.</p>
+          <p class="module-tag">One fat-fingered cost can't rewrite your margins.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$199</span>
+          <span class="price-note">one-time &middot; per database</span>
         </div>
       </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            A wrong unit cost on a PO receipt quietly rewrites the product's
+            standard price, and every later sale books nonsense COGS. Nobody
+            notices until the month-end margin report looks insane and somebody
+            spends two days working out why.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Per-category percentage threshold blocks an abnormal receipt cost before it lands</li>
+            <li><span>&#10003;</span> Per-category maximum multiple clamps runaway COGS on invoices, with an alert</li>
+            <li><span>&#10003;</span> Optionally block credit notes that reverse COGS with no goods return</li>
+            <li><span>&#10003;</span> Scoped COGS cleanup wizard &mdash; preview, then post through a clearing account</li>
+            <li><span>&#10003;</span> All guards off by default; installing changes nothing</li>
+            <li><span>&#10003;</span> Ships with its own test suite &mdash; 8 tests, all passing</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/cost_guardrail" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=cost_guardrail" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>stock_account</code>, <code>purchase</code>, <code>sale_stock</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>stock_expiring_lots</h3>
+          <p class="module-tag">What's about to go bad, soonest first.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$59</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            Odoo tracks expiration dates but never gives you the one screen you
+            actually want: everything on hand, soonest to expire first, with how
+            many days are left.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Days to Expiry on every lot &mdash; negative once expired, in the user's own timezone</li>
+            <li><span>&#10003;</span> Inventory &gt; Reporting &gt; Expiring Stock, filtered to lots with stock on hand</li>
+            <li><span>&#10003;</span> Red once expired, amber inside two weeks, no configuration needed</li>
+            <li><span>&#10003;</span> Read-only &mdash; a watchlist, not another place to edit stock</li>
+            <li><span>&#10003;</span> Pairs with Odoo's own FEFO removal strategy</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/stock_expiring_lots" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=stock_expiring_lots" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>stock</code>, <code>product_expiry</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>bank_rec_match_filter</h3>
+          <p class="module-tag">The reconciliation tab, back to being useful.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$79</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            Match Existing Entries lists every unreconciled journal item in the
+            database. On a real ledger that is thousands of rows, so nobody
+            scrolls it &mdash; they type in the search box instead, which defeats
+            the point of the tab.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Line has a partner &rarr; that partner's open receivables and payables only</li>
+            <li><span>&#10003;</span> No partner &rarr; the journal's own outstanding payments, on the correct side</li>
+            <li><span>&#10003;</span> Batch Payments tab appears on deposits only</li>
+            <li><span>&#10003;</span> Domain is appended to the standard one, never replaced &mdash; safe next to other modules</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/bank_rec_match_filter" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=bank_rec_match_filter" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>account_accountant</code>, <code>account_accountant_batch_payment</code></dd>
+            <dt>edition</dt><dd>Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
     </article>
 
   </div>
