@@ -76,6 +76,9 @@
 <span class="t-out">bank_feed_receipt_required/   <span class="t-comment"># live on app store</span></span>
 <span class="t-out">chatter_mention_dm/           <span class="t-comment"># live on app store</span></span>
 <span class="t-out">google_calendar_private_sync/ <span class="t-comment"># live on app store</span></span>
+<span class="t-out">hr_self_onboarding/           <span class="t-comment"># live on app store</span></span>
+<span class="t-out">log_quiet/                    <span class="t-comment"># live on app store</span></span>
+<span class="t-out">barcode_parser_guard/         <span class="t-comment"># live on app store — free</span></span>
 <span class="t-out">cost_guardrail/               <span class="t-comment"># coming soon</span></span>
 <span class="t-prompt">$</span> <span class="t-comment"># twelve years operating. modules that generalize ship here.</span></pre>
     </div>
@@ -278,6 +281,138 @@
             <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
             <dt>depends</dt><dd><code>google_calendar</code>, <code>appointment</code></dd>
             <dt>edition</dt><dd>Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>hr_self_onboarding</h3>
+          <p class="module-tag">They fill it in. You stop retyping it.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$129</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            New-hire data arrives as a scan, a phone photo, or a form on someone's
+            desk &mdash; and then a manager types it into Odoo, getting the bank
+            details wrong often enough to matter. The person who knows the answers
+            should be the one entering them, without needing an Odoo account.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> One button emails a secure link &mdash; and doubles as the resend</li>
+            <li><span>&#10003;</span> Address, DOB, national ID, emergency contact, direct deposit, clock-in PIN</li>
+            <li><span>&#10003;</span> No portal user, no password, no licence seat</li>
+            <li><span>&#10003;</span> 256-bit token, single use, 14-day expiry, CSRF-protected, explicit field allowlist</li>
+            <li><span>&#10003;</span> Nothing sensitive reaches the chatter &mdash; tracking suppressed on the submission</li>
+            <li><span>&#10003;</span> Labels and state list follow the company's country, not hardcoded US</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/hr_self_onboarding" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=hr_self_onboarding" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>hr</code>, <code>website</code>, <code>mail</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>log_quiet</h3>
+          <p class="module-tag">Twelve noisy messages, silenced. Everything else untouched.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$49</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            A log you have stopped reading is not a log. Odoo emits a handful of
+            harmless messages at ERROR and WARNING until a real failure is just one
+            more line in the scroll &mdash; and once people learn to scroll past
+            them, they scroll past the real one too.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Serialization retries the ORM already handles drop to WARNING &mdash; still logged</li>
+            <li><span>&#10003;</span> Export / unsubscribe / import "ignoring args" noise, gone</li>
+            <li><span>&#10003;</span> Crawler junk, stale sourcemaps, Studio boot warnings, gone</li>
+            <li><span>&#10003;</span> No filter matches on level or logger alone &mdash; every one matches a named message</li>
+            <li><span>&#10003;</span> Nine core loggers; the root logger is never touched</li>
+            <li><span>&#10003;</span> Any filter switched off with one env var. No uninstall</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/log_quiet" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=log_quiet" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>base</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>barcode_parser_guard</h3>
+          <p class="module-tag">One empty scan can't wedge the scanner screen.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">Free</span>
+          <span class="price-note">because it's twenty lines</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            Odoo's barcode parser reads <code>barcode.length</code> without checking
+            a barcode was passed. Callers can reach it with <code>undefined</code>,
+            the JavaScript throws, and the scanner screen stops responding &mdash;
+            operator at a cart, gun in hand, no way forward but a page reload.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Guards the falsy case, defers to core for every valid scan</li>
+            <li><span>&#10003;</span> Standard <code>patch()</code> helper &mdash; no core file touched</li>
+            <li><span>&#10003;</span> Installs automatically alongside <code>barcodes</code></li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/barcode_parser_guard" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=barcode_parser_guard" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>barcodes</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
             <dt>license</dt><dd><code>OPL-1</code></dd>
             <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
           </dl>
