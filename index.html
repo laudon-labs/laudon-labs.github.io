@@ -72,10 +72,11 @@
 <span class="t-out">license: OPL-1</span>
 <span class="t-out">support: tom@laudonlabs.com</span>
 <span class="t-prompt">$</span> <span class="t-cmd">ls modules/</span>
-<span class="t-out">bounced_payment_return/   <span class="t-comment"># live on app store</span></span>
-<span class="t-out">cost_guardrail/           <span class="t-comment"># coming soon</span></span>
-<span class="t-out">stock_reorder_enh/        <span class="t-comment"># in development</span></span>
-<span class="t-out">stock_pick_cart/          <span class="t-comment"># in development</span></span>
+<span class="t-out">bounced_payment_return/       <span class="t-comment"># live on app store</span></span>
+<span class="t-out">bank_feed_receipt_required/   <span class="t-comment"># live on app store</span></span>
+<span class="t-out">chatter_mention_dm/           <span class="t-comment"># live on app store</span></span>
+<span class="t-out">google_calendar_private_sync/ <span class="t-comment"># live on app store</span></span>
+<span class="t-out">cost_guardrail/               <span class="t-comment"># coming soon</span></span>
 <span class="t-prompt">$</span> <span class="t-comment"># twelve years operating. modules that generalize ship here.</span></pre>
     </div>
   </div>
@@ -153,6 +154,137 @@
       </div>
     </article>
 
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>bank_feed_receipt_required</h3>
+          <p class="module-tag">No receipt, no memo, no posting &mdash; enforced at the bank feed.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$99</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            The moment a bank charge is reconciled is the only moment anyone
+            remembers what it was for. A month later, at close, nobody does &mdash;
+            and the bookkeeper is emailing five people about a $348 charge from a
+            vendor no one recognizes.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Blocks manual bank-feed lines hitting an expense account with no receipt or no memo</li>
+            <li><span>&#10003;</span> One combined error listing everything missing &mdash; fixed in a single pass</li>
+            <li><span>&#10003;</span> Receipt drop zone rendered right on the Manual Operations tab</li>
+            <li><span>&#10003;</span> Never blocks AR/AP, bill matches, or reconcile-model lines</li>
+            <li><span>&#10003;</span> Background auto-reconciliation runs untouched</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/bank_feed_receipt_required" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=bank_feed_receipt_required" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>account_accountant</code></dd>
+            <dt>edition</dt><dd>Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>chatter_mention_dm</h3>
+          <p class="module-tag">@mentions become Discuss DMs. #channel mentions get posted to the channel.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$69</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            Chatter mentions land in the Inbox, and in a busy database the Inbox
+            is where notifications go to die. This pushes them somewhere people
+            actually look &mdash; without asking anyone to change how they work.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> @mention a user &rarr; direct message in Discuss, posted as you</li>
+            <li><span>&#10003;</span> Mention a #channel &rarr; the same message posted to that channel</li>
+            <li><span>&#10003;</span> Clickable link back to the source record, every time</li>
+            <li><span>&#10003;</span> Works on every model with a Chatter &mdash; no configuration, no model list</li>
+            <li><span>&#10003;</span> Discuss failures can never block the original Chatter post</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/chatter_mention_dm" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=chatter_mention_dm" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>mail</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>google_calendar_private_sync</h3>
+          <p class="module-tag">Google Calendar, without the leaks.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$79</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            The first thing that happens after you connect a staff calendar is
+            that a colleague opens the calendar view and reads a dentist
+            appointment. The second is a support ticket about two hundred
+            thousand imported events.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> Events synced from Google are forced private &mdash; the slot still blocks, the details stay the owner's</li>
+            <li><span>&#10003;</span> Appointments booked natively in Odoo are untouched</li>
+            <li><span>&#10003;</span> Forward-only first sync &mdash; no more importing a year of past events</li>
+            <li><span>&#10003;</span> Look-ahead still honours <code>google_calendar.sync.range_days</code></li>
+            <li><span>&#10003;</span> A user's own synced Google copy no longer blocks their own bookings</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/google_calendar_private_sync" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=google_calendar_private_sync" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>google_calendar</code>, <code>appointment</code></dd>
+            <dt>edition</dt><dd>Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
     <article class="module module--coming">
       <header class="module-head">
         <div class="module-title">
@@ -163,35 +295,6 @@
       </header>
     </article>
 
-    <article class="module module--coming">
-      <header class="module-head">
-        <div class="module-title">
-          <span class="coming-label">in development</span>
-          <h3>product_gl_map</h3>
-          <p class="module-tag">Push COGS &amp; revenue accounts down to the product level &mdash; segmented P&amp;L without relying on accounting category defaults.</p>
-        </div>
-      </header>
-    </article>
-
-    <article class="module module--coming">
-      <header class="module-head">
-        <div class="module-title">
-          <span class="coming-label">in development</span>
-          <h3>stock_reorder_enh</h3>
-          <p class="module-tag">Demand-driven min/max with seasonality, auto-expanding sample window, and advisor audit.</p>
-        </div>
-      </header>
-    </article>
-
-    <article class="module module--coming">
-      <header class="module-head">
-        <div class="module-title">
-          <span class="coming-label">in development</span>
-          <h3>stock_pick_cart</h3>
-          <p class="module-tag">OWL-based cart &amp; tote picking UI with wave wizard, multi-tote batch, and barcode-driven flow.</p>
-        </div>
-      </header>
-    </article>
   </div>
 </section>
 
