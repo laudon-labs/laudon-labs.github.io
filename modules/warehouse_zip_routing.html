@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>warehouse_zip_routing &middot; Laudon Labs</title>
+<meta name="description" content="Every warehouse knows the territory it serves. An Odoo 18 module by Laudon Labs.">
+<meta name="theme-color" content="#f6f5f2">
+<meta property="og:title" content="warehouse_zip_routing &middot; Laudon Labs">
+<meta property="og:description" content="Every warehouse knows the territory it serves. An Odoo 18 module by Laudon Labs.">
+<meta property="og:image" content="/logo-mark.png">
+<link rel="icon" href="/logo-mark.png?v=2" type="image/png">
+<link rel="apple-touch-icon" href="/logo-mark.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">
+      <img src="/logo-mark.png" alt="Laudon Labs" class="brand-mark">
+      <span class="brand-name">Laudon Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#modules" class="active">Modules</a>
+      <a href="/#philosophy">Philosophy</a>
+      <a href="/request.html">Request</a>
+      <a href="https://apps.odoo.com/apps/modules/browse?author=Laudon+Labs" target="_blank" rel="noopener" class="nav-cta">Odoo Store <span class="arrow">&rarr;</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="container">
+    <a href="/#modules" class="breadcrumb">&larr; all modules</a>
+    <h1>warehouse_zip_routing</h1>
+    <p class="detail-tagline">Every warehouse knows the territory it serves.</p>
+    <div class="detail-meta">
+      <span class="detail-price">$199</span>
+      <span class="sep">|</span>
+      <span>one-time &middot; per database</span>
+      <span class="sep">|</span>
+      <span>Community &amp; Enterprise</span>
+    </div>
+    <div class="cta-row" style="margin-bottom:0">
+      <a href="https://apps.odoo.com/apps/modules/18.0/warehouse_zip_routing" target="_blank" rel="noopener" class="btn btn-primary">Buy on the Odoo App Store <span class="arrow">&rarr;</span></a>
+      <a href="mailto:tom@laudonlabs.com?subject=warehouse_zip_routing" class="btn btn-ghost">Questions?</a>
+    </div>
+  </div>
+</header>
+
+<section class="detail-section">
+  <div class="container">
+    <div class="detail-grid">
+      <div class="detail-body">
+        <p>Odoo already lets a delivery method declare the ZIP prefixes it covers.
+This gives warehouses the same idea, then answers the question Odoo leaves to whoever
+is typing: which warehouse ships this, and by what method? Orders stop shipping from
+the wrong side of the country because somebody accepted the default.</p>
+        <ul class="bullet-list">
+          <li><span>&#10003;</span> ZIP prefixes, states and countries per warehouse &mdash; longest prefix wins, so a region and a town inside it don't fight</li>
+          <li><span>&#10003;</span> A prefix can belong to only one active warehouse; reuse one and it names the warehouse that already owns it</li>
+          <li><span>&#10003;</span> Customers resolve from their address, visibly on the contact, and stay overridable by hand</li>
+          <li><span>&#10003;</span> Re-resolves on the programmatic paths too &mdash; website carts, imports, wizards &mdash; where onchanges never fire</li>
+          <li><span>&#10003;</span> Ship-to beats bill-to; an explicit choice always wins; a confirmed order is never re-routed</li>
+          <li><span>&#10003;</span> Restrict a product to certain warehouses or methods &mdash; 33 tests, all passing</li>
+        </ul>
+
+      </div>
+      <aside class="spec-card">
+        <dl>
+          <dt>series</dt><dd><code>18.0</code></dd>
+          <dt>depends</dt><dd><code>sale_stock</code>, <code>delivery</code>, <code>purchase</code></dd>
+          <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+          <dt>license</dt><dd><code>OPL-1</code></dd>
+          <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+        </dl>
+        <div class="spec-actions">
+          <a href="https://apps.odoo.com/apps/modules/18.0/warehouse_zip_routing" target="_blank" rel="noopener" class="btn btn-primary">Buy on the Odoo App Store</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section-cta">
+  <div class="container">
+    <h2>Need a tweak to this module?</h2>
+    <p>Customizations to any Laudon Labs module are quoted through the same
+    intake form. Typical reply in under a day.</p>
+    <a href="/request.html" class="btn btn-primary btn-lg">Start a request <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <a href="/" class="brand">
+        <img src="/logo-mark.png" alt="" class="brand-mark">
+        <span class="brand-name">Laudon Labs</span>
+      </a>
+      <p class="footer-tagline">Odoo modules, built for operators.</p>
+    </div>
+    <div class="footer-right">
+      <p>
+        <a href="https://apps.odoo.com/apps/modules/browse?author=Laudon+Labs" target="_blank" rel="noopener">Odoo App Store</a>
+        &middot;
+        <a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a>
+      </p>
+      <p class="copyright">&copy; <span id="year"></span> Laudon Labs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

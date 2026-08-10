@@ -5,29 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laudon Labs — Odoo modules, built for operators</title>
 <meta name="description" content="Laudon Labs builds focused, production-grade Odoo 18 modules. Clean inherits, no core overrides, full audit trails. Shipped by an operator, for operators.">
-<meta name="theme-color" content="#0d0d12">
+<meta name="theme-color" content="#f6f5f2">
 <meta property="og:title" content="Laudon Labs">
 <meta property="og:description" content="Focused Odoo 18 modules, built by an operator who uses them in production.">
 <meta property="og:image" content="/logo-mark.png">
-<link rel="icon" href="logo-mark.png?v=2" type="image/png">
-<link rel="apple-touch-icon" href="logo-mark.png?v=2">
+<link rel="icon" href="/logo-mark.png?v=2" type="image/png">
+<link rel="apple-touch-icon" href="/logo-mark.png?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="container nav-inner">
     <a href="/" class="brand">
-      <img src="logo-mark.png" alt="Laudon Labs" class="brand-mark">
+      <img src="/logo-mark.png" alt="Laudon Labs" class="brand-mark">
       <span class="brand-name">Laudon Labs</span>
     </a>
     <div class="nav-links">
-      <a href="#modules">Modules</a>
-      <a href="#philosophy">Philosophy</a>
-      <a href="request.html">Request</a>
+      <a href="/#modules">Modules</a>
+      <a href="/#philosophy">Philosophy</a>
+      <a href="/request.html">Request</a>
       <a href="https://apps.odoo.com/apps/modules/browse?author=Laudon+Labs" target="_blank" rel="noopener" class="nav-cta">Odoo Store <span class="arrow">&rarr;</span></a>
     </div>
   </div>
@@ -35,56 +35,50 @@
 
 <header class="hero">
   <div class="container">
-    <div class="eyebrow">
-      <span class="dot"></span>
-      <span>v18.0 &middot; production-grade &middot; OPL-1</span>
-    </div>
-    <h1>
-      Odoo modules<br>
-      <span class="accent">built for operators.</span>
-    </h1>
-    <p class="tagline">
-      Twelve years running a US distributor. The only way to get the right
-      software was to build it. Laudon Labs ships the modules that generalize
-      &mdash; sanitized, documented, and maintained.
-    </p>
-    <div class="cta-row">
-      <a href="#modules" class="btn btn-primary">Browse modules <span class="arrow">&rarr;</span></a>
-      <a href="https://apps.odoo.com/apps/modules/browse?author=Laudon+Labs" target="_blank" rel="noopener" class="btn btn-ghost">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:6px"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h5v-2h-3z"/></svg>
-        View on Odoo App Store
-      </a>
-    </div>
-
-    <div class="terminal">
-      <div class="terminal-chrome">
-        <span class="tc-dot tc-red"></span>
-        <span class="tc-dot tc-yellow"></span>
-        <span class="tc-dot tc-green"></span>
-        <span class="terminal-title">laudon-labs &mdash; principles</span>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">
+          <span class="dot"></span>
+          <span>12 modules live on the Odoo App Store</span>
+        </div>
+        <h1>
+          Odoo modules<br>
+          <span class="accent">built for operators.</span>
+        </h1>
+        <p class="tagline">
+          Twelve years running a US distributor. The only way to get the right
+          software was to build it. Laudon Labs ships the modules that generalize
+          &mdash; sanitized, documented, and maintained.
+        </p>
+        <div class="cta-row">
+          <a href="#modules" class="btn btn-primary">Browse modules <span class="arrow">&rarr;</span></a>
+          <a href="https://apps.odoo.com/apps/modules/browse?author=Laudon+Labs" target="_blank" rel="noopener" class="btn btn-ghost">View on Odoo App Store</a>
+        </div>
+        <div class="hero-stats">
+          <span><strong>Odoo 18.0</strong> series</span>
+          <span><strong>150+</strong> automated tests</span>
+          <span><strong>2</strong> free modules</span>
+        </div>
       </div>
-      <pre class="terminal-body"><span class="t-prompt">$</span> <span class="t-cmd">cat laudon-labs/principles.yaml</span>
+      <div class="terminal">
+        <div class="terminal-chrome">
+          <span class="tc-dot tc-red"></span>
+          <span class="tc-dot tc-yellow"></span>
+          <span class="tc-dot tc-green"></span>
+          <span class="terminal-title">laudon-labs &mdash; principles</span>
+        </div>
+        <pre class="terminal-body"><span class="t-prompt">$</span> <span class="t-cmd">cat principles.yaml</span>
 <span class="t-out">philosophy:</span>
-<span class="t-out">  - <span class="t-ok">clean_inherits_only</span>      <span class="t-comment"># no core overrides, upgrade-safe</span></span>
-<span class="t-out">  - <span class="t-ok">operator_first</span>            <span class="t-comment"># solves a real, recurring problem</span></span>
-<span class="t-out">  - <span class="t-ok">audit_trail_by_default</span>    <span class="t-comment"># chatter on every state change</span></span>
-<span class="t-out">  - <span class="t-ok">narrow_scope_deep_quality</span> <span class="t-comment"># small surface, well-tested</span></span>
-<span class="t-out">license: OPL-1</span>
-<span class="t-out">support: tom@laudonlabs.com</span>
-<span class="t-prompt">$</span> <span class="t-cmd">ls modules/</span>
-<span class="t-out">pickup_point_network/         <span class="t-comment"># live on app store</span></span>
-<span class="t-out">warehouse_zip_routing/        <span class="t-comment"># live on app store</span></span>
-<span class="t-out">bounced_payment_return/       <span class="t-comment"># live on app store</span></span>
-<span class="t-out">bank_feed_receipt_required/   <span class="t-comment"># live on app store</span></span>
-<span class="t-out">chatter_mention_dm/           <span class="t-comment"># live on app store</span></span>
-<span class="t-out">google_calendar_private_sync/ <span class="t-comment"># live on app store</span></span>
-<span class="t-out">hr_self_onboarding/           <span class="t-comment"># live on app store</span></span>
-<span class="t-out">log_quiet/                    <span class="t-comment"># live on app store</span></span>
-<span class="t-out">barcode_parser_guard/         <span class="t-comment"># live on app store — free</span></span>
-<span class="t-out">cost_guardrail/               <span class="t-comment"># live on app store</span></span>
-<span class="t-out">stock_expiring_lots/          <span class="t-comment"># live on app store</span></span>
-<span class="t-out">bank_rec_match_filter/        <span class="t-comment"># live on app store</span></span>
-<span class="t-prompt">$</span> <span class="t-comment"># twelve years operating. modules that generalize ship here.</span></pre>
+<span class="t-out">  - <span class="t-ok">clean_inherits_only</span></span>
+<span class="t-out">    <span class="t-comment"># no core overrides, upgrade-safe</span></span>
+<span class="t-out">  - <span class="t-ok">operator_first</span></span>
+<span class="t-out">    <span class="t-comment"># solves a real, recurring problem</span></span>
+<span class="t-out">  - <span class="t-ok">audit_trail_by_default</span></span>
+<span class="t-out">    <span class="t-comment"># chatter on every state change</span></span>
+<span class="t-out">  - <span class="t-ok">narrow_scope_deep_quality</span></span>
+<span class="t-out">    <span class="t-comment"># small surface, well-tested</span></span>
+<span class="t-out">support: tom@laudonlabs.com</span></pre>
+      </div>
     </div>
   </div>
 </header>
@@ -94,558 +88,87 @@
     <div class="section-head">
       <span class="section-label">// modules</span>
       <h2>Shipping on the Odoo App Store</h2>
+      <p>Twelve focused modules, each solving one recurring operational problem.
+      Click any card for the full story, feature list, and technical spec.</p>
     </div>
 
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>pickup_point_network</h3>
-          <p class="module-tag">Deliver to community hosts on a schedule &mdash; not to every doorstep.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$499</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Customers volunteer as hosts. Their neighbours order to that address.
-            You deliver everything for a region in one consolidated run, on a
-            schedule everybody can predict. Running that on spreadsheets means
-            missed deadlines, territory clashes discovered too late, and commission
-            worked out by hand every month.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Zones with their own schedule rule, rolled forward automatically for months ahead</li>
-            <li><span>&#10003;</span> One run per cycle &mdash; stop sequencing, driver ETAs, signature and proof-of-delivery photo</li>
-            <li><span>&#10003;</span> Public locator with ZIP search, and a host application form that geocodes and distance-checks on arrival</li>
-            <li><span>&#10003;</span> Bill of lading, per-box manifest, optional separation of duties and pack-stage quality check</li>
-            <li><span>&#10003;</span> Commission accrues per invoice onto a draft vendor bill; past-due hosts move to grace, then suspended</li>
-            <li><span>&#10003;</span> No Enterprise apps, no CDN calls, no API key needed &mdash; 33 tests, all passing</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/pickup_point_network" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=pickup_point_network" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>sale_management</code>, <code>stock</code>, <code>account</code>, <code>delivery</code>, <code>fleet</code>, <code>website_sale</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
+    <div class="group">
+      <div class="group-title"><strong>warehouse &amp; logistics</strong> &middot; 4 modules</div>
+      <div class="card-grid">
+        <a class="card" href="/modules/pickup_point_network.html">
+          <div class="card-top"><h3>pickup_point_network</h3></div>
+          <p class="card-tag">Deliver to community hosts on a schedule &mdash; not to every doorstep.</p>
+          <div class="card-foot"><span class="card-price">$499</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/warehouse_zip_routing.html">
+          <div class="card-top"><h3>warehouse_zip_routing</h3></div>
+          <p class="card-tag">Every warehouse knows the territory it serves.</p>
+          <div class="card-foot"><span class="card-price">$199</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/stock_expiring_lots.html">
+          <div class="card-top"><h3>stock_expiring_lots</h3></div>
+          <p class="card-tag">What's about to go bad, soonest first.</p>
+          <div class="card-foot"><span class="card-price">$59</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/barcode_parser_guard.html">
+          <div class="card-top"><h3>barcode_parser_guard</h3></div>
+          <p class="card-tag">One empty scan can't wedge the scanner screen.</p>
+          <div class="card-foot"><span class="card-price free">Free</span><span class="card-link">Details &rarr;</span></div>
+        </a>
       </div>
-    </article>
+    </div>
 
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>warehouse_zip_routing</h3>
-          <p class="module-tag">Every warehouse knows the territory it serves.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$199</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Odoo already lets a delivery method declare the ZIP prefixes it covers.
-            This gives warehouses the same idea, then answers the question Odoo
-            leaves to whoever is typing: which warehouse ships this, and by what
-            method? Orders stop shipping from the wrong side of the country because
-            somebody accepted the default.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> ZIP prefixes, states and countries per warehouse &mdash; longest prefix wins, so a region and a town inside it don't fight</li>
-            <li><span>&#10003;</span> A prefix can belong to only one active warehouse; reuse one and it names the warehouse that already owns it</li>
-            <li><span>&#10003;</span> Customers resolve from their address, visibly on the contact, and stay overridable by hand</li>
-            <li><span>&#10003;</span> Re-resolves on the programmatic paths too &mdash; website carts, imports, wizards &mdash; where onchanges never fire</li>
-            <li><span>&#10003;</span> Ship-to beats bill-to; an explicit choice always wins; a confirmed order is never re-routed</li>
-            <li><span>&#10003;</span> Restrict a product to certain warehouses or methods &mdash; 33 tests, all passing</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/warehouse_zip_routing" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=warehouse_zip_routing" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>sale_stock</code>, <code>delivery</code>, <code>purchase</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
+    <div class="group">
+      <div class="group-title"><strong>accounting &amp; finance</strong> &middot; 4 modules</div>
+      <div class="card-grid">
+        <a class="card" href="/modules/cost_guardrail.html">
+          <div class="card-top"><h3>cost_guardrail</h3></div>
+          <p class="card-tag">One fat-fingered cost can't rewrite your margins.</p>
+          <div class="card-foot"><span class="card-price">$199</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/bounced_payment_return.html">
+          <div class="card-top"><h3>bounced_payment_return</h3></div>
+          <p class="card-tag">One-click workflow for bounced checks, NSF, and ACH returns.</p>
+          <div class="card-foot"><span class="card-price">$149</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/bank_feed_receipt_required.html">
+          <div class="card-top"><h3>bank_feed_receipt_required</h3><span class="badge">Enterprise</span></div>
+          <p class="card-tag">No receipt, no memo, no posting &mdash; enforced at the bank feed.</p>
+          <div class="card-foot"><span class="card-price">$99</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/bank_rec_match_filter.html">
+          <div class="card-top"><h3>bank_rec_match_filter</h3><span class="badge">Enterprise</span></div>
+          <p class="card-tag">The reconciliation tab, back to being useful.</p>
+          <div class="card-foot"><span class="card-price">$79</span><span class="card-link">Details &rarr;</span></div>
+        </a>
       </div>
-    </article>
+    </div>
 
-    <article class="module">
-      <header class="module-head">
-        <div class="module-icon" aria-hidden="true">
-          <span>$</span>
-          <span class="arc"></span>
-        </div>
-        <div class="module-title">
-          <h3>bounced_payment_return</h3>
-          <p class="module-tag">One-click workflow for bounced checks, NSF, and ACH returns.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$149</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Handling a bounced check in vanilla Odoo takes four to five steps
-            and is easy to get wrong. This module collapses the workflow into
-            a single wizard with a full audit trail.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Reverses the payment entry &mdash; keeps original bank deposit matching intact</li>
-            <li><span>&#10003;</span> Reopens the original invoice, restores amount due automatically</li>
-            <li><span>&#10003;</span> Optional bank-fee invoice, posted and ready to collect</li>
-            <li><span>&#10003;</span> Full chatter audit on payment, invoice, partner, and fee invoice</li>
-            <li><span>&#10003;</span> Outstanding-Receipts lines pre-positioned for next bank statement</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/bounced_payment_return" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=bounced_payment_return" class="btn btn-ghost">Questions?</a>
-          </div>
-
-          <div class="terminal terminal-sm">
-            <div class="terminal-chrome">
-              <span class="tc-dot tc-red"></span>
-              <span class="tc-dot tc-yellow"></span>
-              <span class="tc-dot tc-green"></span>
-              <span class="terminal-title">odoo-shell &mdash; bounced_payment_return</span>
-            </div>
-            <pre class="terminal-body"><span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-cmd">payment.action_return_payment()</span>
-<span class="t-out">{</span>
-<span class="t-out">    "reversal_move_id": 8423,       <span class="t-comment"># reopens the invoice</span></span>
-<span class="t-out">    "fee_invoice_id":   1092,       <span class="t-comment"># optional, bills the customer</span></span>
-<span class="t-out">    "is_returned":      True,</span>
-<span class="t-out">    "return_reason":    "bounced",</span>
-<span class="t-out">    "chatter":          ["payment", "invoice", "partner", "fee_invoice"]</span>
-<span class="t-out">}</span>
-<span class="t-prompt">&gt;&gt;&gt;</span> <span class="t-comment"># one wizard, one click, bookkeeping done right</span></pre>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>account</code>, <code>account_check_printing</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
+    <div class="group">
+      <div class="group-title"><strong>people &amp; productivity</strong> &middot; 4 modules</div>
+      <div class="card-grid">
+        <a class="card" href="/modules/hr_self_onboarding.html">
+          <div class="card-top"><h3>hr_self_onboarding</h3></div>
+          <p class="card-tag">New hires fill it in. You stop retyping it.</p>
+          <div class="card-foot"><span class="card-price">$129</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/google_calendar_private_sync.html">
+          <div class="card-top"><h3>google_calendar_private_sync</h3><span class="badge">Enterprise</span></div>
+          <p class="card-tag">Google Calendar, without the leaks.</p>
+          <div class="card-foot"><span class="card-price">$79</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/chatter_mention_dm.html">
+          <div class="card-top"><h3>chatter_mention_dm</h3></div>
+          <p class="card-tag">@mentions become Discuss DMs. #channel mentions post to the channel.</p>
+          <div class="card-foot"><span class="card-price">$69</span><span class="card-link">Details &rarr;</span></div>
+        </a>
+        <a class="card" href="/modules/log_quiet.html">
+          <div class="card-top"><h3>log_quiet</h3></div>
+          <p class="card-tag">Twelve noisy log messages, silenced. Everything else untouched.</p>
+          <div class="card-foot"><span class="card-price free">Free</span><span class="card-link">Details &rarr;</span></div>
+        </a>
       </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>bank_feed_receipt_required</h3>
-          <p class="module-tag">No receipt, no memo, no posting &mdash; enforced at the bank feed.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$99</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            The moment a bank charge is reconciled is the only moment anyone
-            remembers what it was for. A month later, at close, nobody does &mdash;
-            and the bookkeeper is emailing five people about a $348 charge from a
-            vendor no one recognizes.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Blocks manual bank-feed lines hitting an expense account with no receipt or no memo</li>
-            <li><span>&#10003;</span> One combined error listing everything missing &mdash; fixed in a single pass</li>
-            <li><span>&#10003;</span> Receipt drop zone rendered right on the Manual Operations tab</li>
-            <li><span>&#10003;</span> Never blocks AR/AP, bill matches, or reconcile-model lines</li>
-            <li><span>&#10003;</span> Background auto-reconciliation runs untouched</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/bank_feed_receipt_required" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=bank_feed_receipt_required" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>account_accountant</code></dd>
-            <dt>edition</dt><dd>Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>chatter_mention_dm</h3>
-          <p class="module-tag">@mentions become Discuss DMs. #channel mentions get posted to the channel.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$69</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Chatter mentions land in the Inbox, and in a busy database the Inbox
-            is where notifications go to die. This pushes them somewhere people
-            actually look &mdash; without asking anyone to change how they work.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> @mention a user &rarr; direct message in Discuss, posted as you</li>
-            <li><span>&#10003;</span> Mention a #channel &rarr; the same message posted to that channel</li>
-            <li><span>&#10003;</span> Clickable link back to the source record, every time</li>
-            <li><span>&#10003;</span> Works on every model with a Chatter &mdash; no configuration, no model list</li>
-            <li><span>&#10003;</span> Discuss failures can never block the original Chatter post</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/chatter_mention_dm" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=chatter_mention_dm" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>mail</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>google_calendar_private_sync</h3>
-          <p class="module-tag">Google Calendar, without the leaks.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$79</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            The first thing that happens after you connect a staff calendar is
-            that a colleague opens the calendar view and reads a dentist
-            appointment. The second is a support ticket about two hundred
-            thousand imported events.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Events synced from Google are forced private &mdash; the slot still blocks, the details stay the owner's</li>
-            <li><span>&#10003;</span> Appointments booked natively in Odoo are untouched</li>
-            <li><span>&#10003;</span> Forward-only first sync &mdash; no more importing a year of past events</li>
-            <li><span>&#10003;</span> Look-ahead still honours <code>google_calendar.sync.range_days</code></li>
-            <li><span>&#10003;</span> A user's own synced Google copy no longer blocks their own bookings</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/google_calendar_private_sync" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=google_calendar_private_sync" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>google_calendar</code>, <code>appointment</code></dd>
-            <dt>edition</dt><dd>Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>hr_self_onboarding</h3>
-          <p class="module-tag">They fill it in. You stop retyping it.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$129</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            New-hire data arrives as a scan, a phone photo, or a form on someone's
-            desk &mdash; and then a manager types it into Odoo, getting the bank
-            details wrong often enough to matter. The person who knows the answers
-            should be the one entering them, without needing an Odoo account.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> One button emails a secure link &mdash; and doubles as the resend</li>
-            <li><span>&#10003;</span> Address, DOB, national ID, emergency contact, direct deposit, clock-in PIN</li>
-            <li><span>&#10003;</span> No portal user, no password, no licence seat</li>
-            <li><span>&#10003;</span> 256-bit token, single use, 14-day expiry, CSRF-protected, explicit field allowlist</li>
-            <li><span>&#10003;</span> Nothing sensitive reaches the chatter &mdash; tracking suppressed on the submission</li>
-            <li><span>&#10003;</span> Labels and state list follow the company's country, not hardcoded US</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/hr_self_onboarding" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=hr_self_onboarding" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>hr</code>, <code>website</code>, <code>mail</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>log_quiet</h3>
-          <p class="module-tag">Twelve noisy messages, silenced. Everything else untouched.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">Free</span>
-          <span class="price-note">a narrow fix for a narrow annoyance</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            A log you have stopped reading is not a log. Odoo emits a handful of
-            harmless messages at ERROR and WARNING until a real failure is just one
-            more line in the scroll &mdash; and once people learn to scroll past
-            them, they scroll past the real one too.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Serialization retries the ORM already handles drop to WARNING &mdash; still logged</li>
-            <li><span>&#10003;</span> Export / unsubscribe / import "ignoring args" noise, gone</li>
-            <li><span>&#10003;</span> Crawler junk, stale sourcemaps, Studio boot warnings, gone</li>
-            <li><span>&#10003;</span> No filter matches on level or logger alone &mdash; every one matches a named message</li>
-            <li><span>&#10003;</span> Nine core loggers; the root logger is never touched</li>
-            <li><span>&#10003;</span> Any filter switched off with one env var. No uninstall</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/log_quiet" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=log_quiet" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>base</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>LGPL-3</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>barcode_parser_guard</h3>
-          <p class="module-tag">One empty scan can't wedge the scanner screen.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">Free</span>
-          <span class="price-note">because it's twenty lines</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Odoo's barcode parser reads <code>barcode.length</code> without checking
-            a barcode was passed. Callers can reach it with <code>undefined</code>,
-            the JavaScript throws, and the scanner screen stops responding &mdash;
-            operator at a cart, gun in hand, no way forward but a page reload.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Guards the falsy case, defers to core for every valid scan</li>
-            <li><span>&#10003;</span> Standard <code>patch()</code> helper &mdash; no core file touched</li>
-            <li><span>&#10003;</span> Installs automatically alongside <code>barcodes</code></li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/barcode_parser_guard" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=barcode_parser_guard" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>barcodes</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>cost_guardrail</h3>
-          <p class="module-tag">One fat-fingered cost can't rewrite your margins.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$199</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            A wrong unit cost on a PO receipt quietly rewrites the product's
-            standard price, and every later sale books nonsense COGS. Nobody
-            notices until the month-end margin report looks insane and somebody
-            spends two days working out why.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Per-category percentage threshold blocks an abnormal receipt cost before it lands</li>
-            <li><span>&#10003;</span> Per-category maximum multiple clamps runaway COGS on invoices, with an alert</li>
-            <li><span>&#10003;</span> Optionally block credit notes that reverse COGS with no goods return</li>
-            <li><span>&#10003;</span> Scoped COGS cleanup wizard &mdash; preview, then post through a clearing account</li>
-            <li><span>&#10003;</span> All guards off by default; installing changes nothing</li>
-            <li><span>&#10003;</span> Ships with its own test suite &mdash; 8 tests, all passing</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/cost_guardrail" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=cost_guardrail" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>stock_account</code>, <code>purchase</code>, <code>sale_stock</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>stock_expiring_lots</h3>
-          <p class="module-tag">What's about to go bad, soonest first.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$59</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Odoo tracks expiration dates but never gives you the one screen you
-            actually want: everything on hand, soonest to expire first, with how
-            many days are left.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Days to Expiry on every lot &mdash; negative once expired, in the user's own timezone</li>
-            <li><span>&#10003;</span> Inventory &gt; Reporting &gt; Expiring Stock, filtered to lots with stock on hand</li>
-            <li><span>&#10003;</span> Red once expired, amber inside two weeks, no configuration needed</li>
-            <li><span>&#10003;</span> Read-only &mdash; a watchlist, not another place to edit stock</li>
-            <li><span>&#10003;</span> Pairs with Odoo's own FEFO removal strategy</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/stock_expiring_lots" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=stock_expiring_lots" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>stock</code>, <code>product_expiry</code></dd>
-            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
-
-    <article class="module">
-      <header class="module-head">
-        <div class="module-title">
-          <h3>bank_rec_match_filter</h3>
-          <p class="module-tag">The reconciliation tab, back to being useful.</p>
-        </div>
-        <div class="module-price">
-          <span class="price">$79</span>
-          <span class="price-note">one-time &middot; per database</span>
-        </div>
-      </header>
-
-      <div class="module-grid">
-        <div class="module-body">
-          <p>
-            Match Existing Entries lists every unreconciled journal item in the
-            database. On a real ledger that is thousands of rows, so nobody
-            scrolls it &mdash; they type in the search box instead, which defeats
-            the point of the tab.
-          </p>
-          <ul class="bullet-list">
-            <li><span>&#10003;</span> Line has a partner &rarr; that partner's open receivables and payables only</li>
-            <li><span>&#10003;</span> No partner &rarr; the journal's own outstanding payments, on the correct side</li>
-            <li><span>&#10003;</span> Batch Payments tab appears on deposits only</li>
-            <li><span>&#10003;</span> Domain is appended to the standard one, never replaced &mdash; safe next to other modules</li>
-          </ul>
-          <div class="module-actions">
-            <a href="https://apps.odoo.com/apps/modules/18.0/bank_rec_match_filter" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
-            <a href="mailto:tom@laudonlabs.com?subject=bank_rec_match_filter" class="btn btn-ghost">Questions?</a>
-          </div>
-        </div>
-        <aside class="module-spec">
-          <dl>
-            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
-            <dt>depends</dt><dd><code>account_accountant</code>, <code>account_accountant_batch_payment</code></dd>
-            <dt>edition</dt><dd>Enterprise</dd>
-            <dt>license</dt><dd><code>OPL-1</code></dd>
-            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
-          </dl>
-        </aside>
-      </div>
-    </article>
+    </div>
 
   </div>
 </section>
@@ -659,22 +182,22 @@
 
     <div class="principles">
       <div class="principle">
-        <div class="principle-num">01</div>
+        <div class="principle-key">clean_inherits_only</div>
         <h4>Clean inherits only</h4>
         <p>No core overrides. No model replacements. Every module sits on top of Odoo, never under it &mdash; so upgrades never break.</p>
       </div>
       <div class="principle">
-        <div class="principle-num">02</div>
+        <div class="principle-key">operator_first</div>
         <h4>Operator-first, not feature-list-first</h4>
         <p>Every module solves a specific, recurring operational problem. If it doesn't save someone real time in real life, it doesn't ship.</p>
       </div>
       <div class="principle">
-        <div class="principle-num">03</div>
+        <div class="principle-key">audit_trail_by_default</div>
         <h4>Full audit trail, by default</h4>
         <p>Every meaningful state change posts to chatter with context. Your accountant will thank you, and your reviewer will too.</p>
       </div>
       <div class="principle">
-        <div class="principle-num">04</div>
+        <div class="principle-key">narrow_scope_deep_quality</div>
         <h4>Narrow scope, deep quality</h4>
         <p>Small surface area, well-tested, actually supported. No half-finished features or vaporware screenshots.</p>
       </div>
@@ -682,14 +205,14 @@
   </div>
 </section>
 
-<section class="section section-cta">
+<section class="section-cta">
   <div class="container">
     <h2>Need something specific?</h2>
     <p>
       Custom Odoo module or a modification to one of ours &mdash; fill out the
       intake form and we&rsquo;ll scope it together. Typical reply in under a day.
     </p>
-    <a href="request.html" class="btn btn-primary btn-lg">Start a request <span class="arrow">&rarr;</span></a>
+    <a href="/request.html" class="btn btn-primary btn-lg">Start a request <span class="arrow">&rarr;</span></a>
   </div>
 </section>
 
@@ -697,7 +220,7 @@
   <div class="container footer-inner">
     <div class="footer-left">
       <a href="/" class="brand">
-        <img src="logo-mark.png" alt="" class="brand-mark">
+        <img src="/logo-mark.png" alt="" class="brand-mark">
         <span class="brand-name">Laudon Labs</span>
       </a>
       <p class="footer-tagline">Odoo modules, built for operators.</p>
