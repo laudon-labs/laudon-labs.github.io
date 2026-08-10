@@ -73,6 +73,7 @@
 <span class="t-out">support: tom@laudonlabs.com</span>
 <span class="t-prompt">$</span> <span class="t-cmd">ls modules/</span>
 <span class="t-out">pickup_point_network/         <span class="t-comment"># live on app store</span></span>
+<span class="t-out">warehouse_zip_routing/        <span class="t-comment"># live on app store</span></span>
 <span class="t-out">bounced_payment_return/       <span class="t-comment"># live on app store</span></span>
 <span class="t-out">bank_feed_receipt_required/   <span class="t-comment"># live on app store</span></span>
 <span class="t-out">chatter_mention_dm/           <span class="t-comment"># live on app store</span></span>
@@ -133,6 +134,52 @@
           <dl>
             <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
             <dt>depends</dt><dd><code>sale_management</code>, <code>stock</code>, <code>account</code>, <code>delivery</code>, <code>fleet</code>, <code>website_sale</code></dd>
+            <dt>edition</dt><dd>Community &amp; Enterprise</dd>
+            <dt>license</dt><dd><code>OPL-1</code></dd>
+            <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
+          </dl>
+        </aside>
+      </div>
+    </article>
+
+    <article class="module">
+      <header class="module-head">
+        <div class="module-title">
+          <h3>warehouse_zip_routing</h3>
+          <p class="module-tag">Every warehouse knows the territory it serves.</p>
+        </div>
+        <div class="module-price">
+          <span class="price">$199</span>
+          <span class="price-note">one-time &middot; per database</span>
+        </div>
+      </header>
+
+      <div class="module-grid">
+        <div class="module-body">
+          <p>
+            Odoo already lets a delivery method declare the ZIP prefixes it covers.
+            This gives warehouses the same idea, then answers the question Odoo
+            leaves to whoever is typing: which warehouse ships this, and by what
+            method? Orders stop shipping from the wrong side of the country because
+            somebody accepted the default.
+          </p>
+          <ul class="bullet-list">
+            <li><span>&#10003;</span> ZIP prefixes, states and countries per warehouse &mdash; longest prefix wins, so a region and a town inside it don't fight</li>
+            <li><span>&#10003;</span> A prefix can belong to only one active warehouse; reuse one and it names the warehouse that already owns it</li>
+            <li><span>&#10003;</span> Customers resolve from their address, visibly on the contact, and stay overridable by hand</li>
+            <li><span>&#10003;</span> Re-resolves on the programmatic paths too &mdash; website carts, imports, wizards &mdash; where onchanges never fire</li>
+            <li><span>&#10003;</span> Ship-to beats bill-to; an explicit choice always wins; a confirmed order is never re-routed</li>
+            <li><span>&#10003;</span> Restrict a product to certain warehouses or methods &mdash; 33 tests, all passing</li>
+          </ul>
+          <div class="module-actions">
+            <a href="https://apps.odoo.com/apps/modules/18.0/warehouse_zip_routing" target="_blank" rel="noopener" class="btn btn-primary">View on Odoo App Store <span class="arrow">&rarr;</span></a>
+            <a href="mailto:tom@laudonlabs.com?subject=warehouse_zip_routing" class="btn btn-ghost">Questions?</a>
+          </div>
+        </div>
+        <aside class="module-spec">
+          <dl>
+            <dt>version</dt><dd><code>18.0.1.0.0</code></dd>
+            <dt>depends</dt><dd><code>sale_stock</code>, <code>delivery</code>, <code>purchase</code></dd>
             <dt>edition</dt><dd>Community &amp; Enterprise</dd>
             <dt>license</dt><dd><code>OPL-1</code></dd>
             <dt>support</dt><dd><a href="mailto:tom@laudonlabs.com">tom@laudonlabs.com</a></dd>
